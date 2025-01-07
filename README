@@ -1,0 +1,89 @@
+# Onde Comer?
+
+**Onde Comer?** é um aplicativo React Native que ajuda os usuários a encontrar restaurantes próximos com base em suas preferências de comida e localização.
+
+## Índice 
+
+- [Estrutura do Projeto](#estrutura-do-projeto) 
+- [Funcionalidades](#funcionalidades) 
+- [Componentes](#componentes) 
+- [Hooks](#hooks) 
+- [Telas](#telas) 
+- [API](#api) 
+- [Contribuição](#contribuição) 
+- [Licença](#licença)
+
+## Estrutura do Projeto
+
+``` 
+.expo/ 
+.gitignore 
+App.js 
+app.json 
+assets/ 
+index.js 
+package.json 
+src/ 
+    api/ 
+        yelp.js 
+    components/ 
+        LocationSearchBar.js 
+        Mapa.js 
+        ResultsDetail.js 
+        ResultsList.js 
+        SearchBar.js 
+    hooks/ 
+        useResults.js 
+    screens/ 
+        ResultsShowScreen.js 
+        SearchScreen.js
+```
+
+## Funcionalidades
+
+* Busca por restaurantes: 
+O usuário pode encontrar diferentes restaurantes com base em um termo relacionado ao tipo de comida que ele procura.
+* Detalhes do Restaurante: 
+Exibe detalhes do restaurante, incluindo fotos, contato e localização no mapa.
+* Filtros por Preço e por Avaliações: 
+Os resultados podem ser filtrados por faixa de preço ou melhores avaliações.
+
+## Componentes
+
+* SearchBar: 
+Barra de pesquisa para o termo de busca.
+LocationSearchBar: Barra de pesquisa para a localização.
+* ResultsList: 
+Lista de resultados filtrados por preço.
+* ResultsDetail: 
+Detalhes de cada restaurante na lista de resultados.
+* Mapa: 
+Exibe a localização do restaurante em um mapa.
+
+## Hooks
+
+* useResults: 
+Hook personalizado para fazer a requisição à API do Yelp e obter os resultados dos restaurantes.
+
+## Telas
+
+* SearchScreen: 
+Tela principal onde os usuários podem buscar por restaurantes.
+* ResultsShowScreen: 
+Tela que exibe os detalhes de um restaurante selecionado.
+
+## API
+
+Este projeto utiliza a API do Yelp para buscar informações sobre restaurantes. Certifique-se de configurar sua chave de API no arquivo yelp.js.
+
+## Contribuição
+
+1. Faça um fork do projeto.
+2. Crie uma nova branch (git checkout -b feature/nova-funcionalidade).
+3. Faça commit das suas alterações (git commit -am 'Adiciona nova funcionalidade').
+4. Faça push para a branch (git push origin feature/nova-funcionalidade).
+5. Abra um Pull Request.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
